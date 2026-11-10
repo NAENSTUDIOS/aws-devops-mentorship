@@ -214,8 +214,6 @@ Place the supplied files in `Task-4/screenshots/` using these exact names:
 
 ![ECS service with two running tasks](screenshots/04-ecs-2-of-2-running.png)
 
-![ALB returned Shop application HTML](screenshots/03-products-count-12.png)
-
 ![Successful S3 upload in Mumbai](screenshots/06-mumbai-upload-success.png)
 
 ![S3 object present in Singapore](screenshots/07-singapore-bucket-object.png)
