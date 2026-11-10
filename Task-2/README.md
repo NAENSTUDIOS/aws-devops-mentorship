@@ -42,13 +42,23 @@ The design principle was to allow only the traffic needed by each tier rather th
 - Configured user access.
 - Validated reachability and administration using `ssh`, `ping`, and `curl`.
 
+### Application endpoint
+
+The production Application Load Balancer endpoint supplied for this environment is:
+
+```text
+http://prod-alb-1957656459.ap-south-1.elb.amazonaws.com
+```
+
+This endpoint is the public HTTP entry point for the application path. It should be tested with `curl` after confirming that the ALB listener, target group, security group, and backend service are ready.
+
 ## Architecture
 
 ```text
-Internet
+Internet user
     |
     v
-Internet Gateway
+Application Load Balancer
     |
     v
 VPC
@@ -75,7 +85,7 @@ Task 2 introduced the controls that later support the ECS and RDS deployment:
 
 ```bash
 ping <host>
-curl <url>
+curl http://prod-alb-1957656459.ap-south-1.elb.amazonaws.com
 ssh <user>@<host>
 ```
 

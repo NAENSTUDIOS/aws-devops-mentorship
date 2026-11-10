@@ -64,9 +64,25 @@ This task established the operational habits used later in the repository: work 
 - Applied basic network diagnostics before escalating a connectivity problem.
 - Built the baseline needed for IAM, VPC, EC2, and container operations.
 
+## Uploaded Evidence
+
+The Task-1 evidence package includes:
+
+- `ips.txt` with the recorded staging and production host addresses.
+- `singapore-dr-estimate.pdf`, an AWS Pricing Calculator export for the Singapore disaster-recovery planning work.
+
+Recorded addresses:
+
+```text
+Staging:    13.201.123.240
+Production: 13.232.86.43
+```
+
+The IP addresses are retained as evidence only; they are not treated as credentials or as a substitute for DNS, security-group, and service-health validation.
+
 ## Screenshots
 
-Screenshots will be added to `Task-1/screenshots/` when the Task-1 evidence set is uploaded.
+Screenshots will be added to `Task-1/screenshots/` when the Task-1 console and terminal evidence is uploaded.
 
 ```text
 Task-1/screenshots/
